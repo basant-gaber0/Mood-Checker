@@ -9,8 +9,6 @@ Write about your day, and this app will analyze your mood, show you an emoji, an
 
 📅 Automatic daily logging
 
-📈 Mood history visualization
-
 🧠 No accounts, no tracking – your data stays with you!
 
 🚀 Live Demo
