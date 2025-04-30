@@ -12,5 +12,5 @@ Write about your day, and this app will analyze your mood, show you an emoji, an
 🧠 No accounts, no tracking – your data stays with you!
 
 🚀 Live Demo
-👉 [Open in Streamlit Cloud]([https://recomstreamapppy-v.streamlit.app/](https://mood-checker-v.streamlit.app/))
+👉 [Open in Streamlit Cloud]((https://mood-checker-v.streamlit.app/))
 
