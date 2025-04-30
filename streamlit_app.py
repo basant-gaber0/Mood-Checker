@@ -28,7 +28,7 @@ if st.button("Analyze My Mood"):
         st.subheader(f"Your mood: **{mood.capitalize()}** {emoji}")
         st.caption(f"Confidence: {result['score']:.2f}")
 
-        # Save to file
+        # Save to file (still private, no display)
         today = datetime.today().strftime("%Y-%m-%d")
         new_entry = pd.DataFrame([[today, entry, mood]], columns=["date", "entry", "mood"])
 
@@ -41,12 +41,3 @@ if st.button("Analyze My Mood"):
         combined.to_csv("journal_log.csv", index=False)
     else:
         st.warning("Please write something first.")
-
-# Show mood history
-if st.checkbox("📈 Show mood history"):
-    try:
-        df = pd.read_csv("journal_log.csv")
-        st.line_chart(df["mood"].apply(lambda x: 1 if x == "positive" else -1 if x == "negative" else 0))
-        st.write(df.tail())
-    except FileNotFoundError:
-        st.info("No entries logged yet.")
