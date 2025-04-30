@@ -15,4 +15,4 @@ Write about your day, and this app will analyze your mood, show you an emoji, an
 
 🚀 Live Demo
 👉 Open in Streamlit Cloud
-(replace with your actual link after deployment)
+https://mood-checker-v.streamlit.app/
